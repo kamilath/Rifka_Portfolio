@@ -1,0 +1,421 @@
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: contain;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-logo {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-logo:hover {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional styles from styles.css that are specific to about component */
+.about-hero,
+.projects-hero,
+.contact-hero {
+    background: linear-gradient(135deg, #000080 0%, #87CEEB 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-hero h1,
+.projects-hero h1,
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.about-hero p,
+.projects-hero p,
+.contact-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.about-content {
+    padding: 80px 0;
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.professional-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.professional-quote:before {
+    content: '"';
+    font-size: 3rem;
+    color: rgba(0, 123, 255, 0.5);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.professional-quote:after {
+    content: '"';
+    font-size: 3rem;
+    color: rgba(0, 123, 255, 0.5);
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+
+.additional-skills {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.additional-skills i {
+    font-size: 2.5rem;
+    color: #000080;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.additional-skills i:hover {
+    transform: scale(1.2);
+    color: #87CEEB;
+}
+
+#skills {
+    padding: 80px 0;
+    background: white;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.static-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+    margin: 30px auto;
+    max-width: 1400px;
+}
+
+.skill-logo {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+    filter: grayscale(0%);
+}
+
+.skill-logo:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    animation: rotate 0.5s ease;
+}
+
+
+.experience-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.experience-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.experience-right {
+  flex: 2;
+  min-width: 300px;
+}
+
+.experience-left h3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.experience-left .company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.experience-left p, .experience-right p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.experience-left .skills img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.experience-left .skills img:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #000080, #87CEEB, #000080);
+    transform: translateX(-50%);
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    left: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    left: 0;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -25px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #000080, #87CEEB);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    animation: pulse 2s infinite;
+}
+
+.timeline-item:nth-child(even) .timeline-marker {
+    left: auto;
+    right: -25px;
+}
+
+.timeline-content {
+    width: 90%;
+    position: relative;
+}
+
+.experience-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 123, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+}
+
+.experience-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.experience-card .company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: contain;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.experience-card .period {
+    font-style: italic;
+    color: #000080;
+    font-weight: 500;
+}
+
+.experience-card p strong {
+    color: #000080;
+    font-weight: bold;
+}
+
+.experience-card .skill-logo {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card .skill-logo:hover {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card ul {
+    margin-top: 20px;
+    color: #000000;
+    list-style: none;
+    padding: 0;
+}
+
+.experience-card li {
+    color: #000000;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.experience-card li:hover {
+    padding-left: 35px;
+    color: #000080;
+}
+
+.experience-card li::before {
+    content: '🚀';
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-5px); }
+    60% { transform: translateY(-3px); }
+}
+
+#experience {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#experience::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
