@@ -1,4 +1,4 @@
-# Portfolio Frontend - Kamilath Rifka
+# Portfolio - Kamilath Rifka
 
 A modern, responsive Angular-based portfolio website showcasing the skills, experience, projects, and qualifications of Me(Kamilath Rifka), a Software Developer & Tester specializing in Java, Python, and web technologies.
 
